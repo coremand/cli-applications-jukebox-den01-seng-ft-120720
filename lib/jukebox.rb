@@ -32,7 +32,6 @@ def list_songs(songs)
   songs.each_with_index do |key,index|
       index += 1 
       listed_songs[index] = key
-      binding.pry
   end
   listed_songs
 end
@@ -40,7 +39,8 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
-  if list_songs(songs)[user_input.to_i] || list_songs(songs)[user_input.to_s]
+  if list_songs(songs)[user_input.to_i]
+    binding.pry
     puts "Playing #{list_songs(songs)[user_input.to_i]}"
   else
     puts "Invalid input, please try again"
