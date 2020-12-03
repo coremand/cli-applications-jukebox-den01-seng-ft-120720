@@ -48,10 +48,8 @@ def play(songs)
   
   list_songs(songs).each do|key,value|
     value.include?(user_input)
-    puts "Playing #{value}"
+    puts "#{value}"
   end
-  
-  
 end
 
 def exit_jukebox
