@@ -63,6 +63,8 @@ def run(songs)
     help
   elsif user_input == "list"
     list(songs)
+  else
+    play(songs)
   end
 end
 
