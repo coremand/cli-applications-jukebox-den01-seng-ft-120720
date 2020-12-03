@@ -57,10 +57,7 @@ end
 def run
   puts "Please enter a command:"
   user_input = gets.strip
-  if user_input == "exit"
-    exit_jukebox
-    binding.pry
-  end
+  
 end
 
 
