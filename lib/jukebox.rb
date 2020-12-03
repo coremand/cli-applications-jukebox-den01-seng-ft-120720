@@ -41,7 +41,7 @@ def play(songs)
   user_input = gets.strip
   
   if list_songs(songs)[user_input.to_i] || list_songs(songs).each{|key,value|
-   value.include?(user_input)}
+   value.include?(user_input) puts }
     puts "Playing #{list_songs(songs)[user_input.to_i]}"
   else
     puts "Invalid input, please try again"
