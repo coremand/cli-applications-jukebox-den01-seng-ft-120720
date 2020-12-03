@@ -43,6 +43,7 @@ def play(songs)
     value.include?(user_input)
     binding.pry
     puts "Playing #{value}"
+  end
   if list_songs(songs)[user_input.to_i] 
     puts "Playing #{list_songs(songs)[user_input.to_i]}"
   else
