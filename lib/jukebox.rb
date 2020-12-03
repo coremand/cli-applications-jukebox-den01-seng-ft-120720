@@ -60,6 +60,10 @@ def run
 case exit_application
   when "list"
     list(songs)
+  when "play"
+    play(songs)
+  when "help"
+    help
 end
 end
 
