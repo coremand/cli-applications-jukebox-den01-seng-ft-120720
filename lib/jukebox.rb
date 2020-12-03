@@ -42,8 +42,9 @@ def play(songs)
 
   if list_songs(songs)[user_input.to_i]
     puts "Playing #{list_songs(songs)[user_input.to_i]}"
+    elsif songs.include?(user_input)
+    puts "#{user_input}"
   else
-   binding.pry 
     puts "Invalid input, please try again"
   end
   
