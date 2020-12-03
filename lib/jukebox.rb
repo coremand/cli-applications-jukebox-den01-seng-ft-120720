@@ -59,13 +59,13 @@ def run
   user_input = gets.strip
 case exit_application
   when "list"
-    list()
+    list
   when "play"
-    play()
+    play
   when "help"
-    help()
+    help
   else
-    exit_jukebox()
+    exit_jukebox
 end
 end
 
