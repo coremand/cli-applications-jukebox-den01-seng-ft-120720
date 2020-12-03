@@ -41,7 +41,6 @@ def play(songs)
   user_input = gets.strip
   list_songs(songs).each do|key,value|
     value.include?(user_input)
-    binding.pry
     puts "Playing #{value}"
   end
   if list_songs(songs)[user_input.to_i] 
