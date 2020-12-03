@@ -57,16 +57,9 @@ end
 def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
-case 
-  when "list"
-   puts list
-  when "play"
-    play
-  when "help"
-    help
-  else
+  if user_input == "exit"
     exit_jukebox
-end
+  end
 end
 
 
