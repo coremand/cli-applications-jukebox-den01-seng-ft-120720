@@ -46,10 +46,10 @@ def play(songs)
     puts "Invalid input, please try again"
   end
   
-  list_songs(songs).each do|key,value|
-    value.include?(user_input)
-    puts "#{value}"
-  end
+  #list_songs(songs).each do|key,value|
+   # value.include?(user_input)
+    #puts "#{value}"
+  #end
 end
 
 def exit_jukebox
