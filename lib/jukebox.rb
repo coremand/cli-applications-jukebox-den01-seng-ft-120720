@@ -44,7 +44,7 @@ def play(songs)
     puts "Playing #{list_songs(songs)[user_input.to_i]}"
     elsif list_songs(songs).each{|key,value|
    value.include?(user_input)
-    puts "#{value}"
+    puts value
     }
   else
     puts "Invalid input, please try again"
