@@ -64,6 +64,8 @@ case exit_application
     play(songs)
   when "help"
     help
+  else
+    exit_jukebox
 end
 end
 
