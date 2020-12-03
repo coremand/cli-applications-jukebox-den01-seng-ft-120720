@@ -39,9 +39,9 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
+  
   if list_songs(songs)[user_input.to_i] 
     puts "Playing #{list_songs(songs)[user_input.to_i]}"
-    elsif 
   else
     puts "Invalid input, please try again"
   end
