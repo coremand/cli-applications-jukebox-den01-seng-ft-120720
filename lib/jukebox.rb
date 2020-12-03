@@ -57,9 +57,9 @@ end
 def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
-case exit_application
+case bye
   when "list"
-   puts list(songs)
+   puts list
   when "play"
     play
   when "help"
