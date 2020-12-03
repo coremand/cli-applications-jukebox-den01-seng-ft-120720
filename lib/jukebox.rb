@@ -59,7 +59,7 @@ def run
   user_input = gets.strip
 case exit_application
   when "list"
-   puts list
+   puts list(songs)
   when "play"
     play
   when "help"
