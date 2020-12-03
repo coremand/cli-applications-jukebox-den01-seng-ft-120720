@@ -28,13 +28,13 @@ def list(songs)
 end
 
 def list_songs(songs)
-  list_songs = {}
+  listed_songs = {}
   songs.each_with_index do |key,index|
       index += 1 
-      list_songs[index] = key
+      listed_songs[index] = key
       binding.pry
   end
-  list_songs
+  listed_songs
 end
 
 def play(songs)
