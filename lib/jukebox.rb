@@ -40,7 +40,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
   
-  if list_songs(songs)[user_input.to_i] || 
+  if list_songs(songs)[user_input.to_i] || list_songs(songs).each{|key,value|
+   value.include?(user_input)}
     puts "Playing #{list_songs(songs)[user_input.to_i]}"
   else
     puts "Invalid input, please try again"
